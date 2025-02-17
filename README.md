@@ -17,13 +17,13 @@ A web application for real-time human pose estimation using TensorFlow.js and th
 - Responsive design
 
 ## Project Structure
-```
+
 - `index.html`: Main HTML file
 - `styles.css`: Styling
 - `src/js/poseEstimator.js`: Pose estimation logic
 - `src/js/uiManager.js`: User interface management
 - `src/js/app.js`: Main application logic
-```
+
 
 ## Technologies Used
 - HTML5
