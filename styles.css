@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.upload-section {
+    background-color: white;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.upload-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.upload-button:hover {
+    background-color: #0056b3;
+}
+.canvas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+canvas {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+.image-stats {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.ai-output {
+    margin-top: 15px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+#fileInput {
+    display: none;
+}
+/* Keypoints Table Styles */
+#keypointsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+#keypointsTable th, #keypointsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+#keypointsTable th {
+    background-color: #f2f2f2;
+}
+.low-confidence {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #8b0000;
+}
+
+.error-message {
+    background-color: #ffdddd;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: none;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pose Estimation Web App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Pose Estimation Web App</h1>
+
+        
+    <div class="container">
+        <div class="upload-section" id="dropZone">
+            <input type="file" id="fileInput" accept="image/*">
+            <p>Drag and drop an image here</p>
+            <button class="upload-button" id="uploadButton">Select Image</button>
+        </div>
+
+        <!-- Image Stats -->
+        <div class="image-stats" id="imageStats">
+                <h3>Image Details</h3>
+                <p id="widthStat">Width: -</p>
+                <p id="heightStat">Height: -</p>
+                <p id="sizeStat">File Size: -</p>
+                
+                <div class="ai-output" id="aiOutput">
+                    <h4>AI Model Output</h4>
+                    <p id="confidenceScore">Confidence Score: -</p>
+                    <p id="detectedKeypoints">Detected Keypoints: -</p>
+                    
+                    <!-- Error Message -->
+                    <div id="errorMessage" class="error-message"></div>
+                    
+                    <table id="keypointsTable">
+                        <thead>
+                            <tr>
+                                <th>Keypoint</th>
+                                <th>Name</th>
+                                <th>X Coordinate</th>
+                                <th>Y Coordinate</th>
+                                <th>Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody id="keypointsList"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Canvas -->
+    <div class="canvas-container" style="margin-top: 20px;">
+        <div>
+            <h3>Original Image</h3>
+            <canvas id="originalCanvas"></canvas>
+        </div>
+        <div>
+            <h3>Pose Estimation</h3>
+            <canvas id="processedCanvas"></canvas>
+        </div>
+    </div>
+
+
+    <!-- App -->
+    <script src="js/poseEstimator.js"></script>
+    <script src="js/uiManager.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
