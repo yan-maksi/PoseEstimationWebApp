@@ -20,6 +20,7 @@ A web application for real-time human pose estimation using TensorFlow.js and th
 ```
 ├── index.html: Main HTML file
 ├── styles.css
+├── package.json
 ├── js/
 │   ├── poseEstimator.js: Pose estimation logic    
 │   ├── uiManager.js: User interface management   
