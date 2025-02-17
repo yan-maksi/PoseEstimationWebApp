@@ -1,9 +1,9 @@
 # Pose Estimation Web App
 
-<img width="607" alt="Screenshot 2025-02-17 at 7 38 04 PM" src="https://github.com/user-attachments/assets/08902fd6-fae2-450e-bff3-01c628264efc" />
-
 ## Overview
 A web application for real-time human pose estimation using TensorFlow.js and the MoveNet model.
+<img width="607" alt="Screenshot 2025-02-17 at 7 38 04 PM" src="https://github.com/user-attachments/assets/08902fd6-fae2-450e-bff3-01c628264efc" />
+
 
 ## Performance Notes
 - Works best with clear, full-body images
